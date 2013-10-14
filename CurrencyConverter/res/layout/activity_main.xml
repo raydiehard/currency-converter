@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/fromConvert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/from_currency" />
+
+    <EditText
+        android:id="@+id/fromConvertEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginBottom="10dp"
+        android:hint="USD"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/toConvert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fromConvertEditText"
+        android:layout_marginTop="10dp"
+        android:text="@string/to_currency" />
+
+    <EditText
+        android:id="@+id/toConvertEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fromConvertEditText"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="10dp"
+        android:hint="MYR"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_convert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toConvertEditText"
+        android:layout_marginTop="32dp"
+        android:layout_toRightOf="@+id/fromConvert"
+        android:text="@string/convert"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_currency_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_convert"
+        android:layout_below="@+id/btn_convert"
+        android:layout_marginTop="21dp"
+        android:text="@string/currency_code"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold" />
+
+</RelativeLayout>
